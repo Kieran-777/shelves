@@ -34,7 +34,7 @@ def update_led_colors():
         if len(led_data) > 0:
             led_values = led_data.split('|')  # Split by '|' to get the RGB values of each LED
             # Update light colors in Blender
-            for i in range(50):  # Assuming 3 LEDs
+            for i in range(216):  
                 r, g, b = map(int, led_values[i].split(','))  # Extract RGB values
                 r_norm = r / 255.0
                 g_norm = g / 255.0
